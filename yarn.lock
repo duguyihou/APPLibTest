@@ -5709,10 +5709,10 @@ react-native-screens@^3.32.0:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
-react-native-turbo-image@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/react-native-turbo-image/-/react-native-turbo-image-1.6.0.tgz#390bebf5b9e1a0d65001efd4e7c83833fead7e4b"
-  integrity sha512-VjURwGAhe4AgWhjsJzYRq4Q3su4sxoLFSdzzL0WP4oHVzI4DWlO528xZ5ILzdh1/aq7hz/ud3GGUrQManv4qUw==
+react-native-turbo-image@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-turbo-image/-/react-native-turbo-image-1.7.0.tgz#eec8c3fd7efe7b04f73f9f196affa24b599f10da"
+  integrity sha512-wgjydhIaioUR2ETR6Fk0o4P4H325P9jeO4DExZ3U9jYF651gMxDz+XoA0mqad6jV/t6nqy3KbWhSoHptIkR8oQ==
 
 react-native@0.74.2:
   version "0.74.2"
