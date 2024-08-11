@@ -12,7 +12,7 @@ const SVGScreen = () => {
             source={{
               uri: url,
             }}
-            size={300}
+            style={{ width: 190, height: 60 }}
             indicator={{
               style: 'large',
               color: 'red',
