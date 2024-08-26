@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import TurboImageScreen from './screens/TurboImageScreen';
 import ProcessingScreen from './screens/ProcessingScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
@@ -8,16 +7,15 @@ import { type HomeStackParamList, RouteName } from './screens/routes.type';
 import SuccessScreen from './screens/SuccessScreen';
 import FailureScreen from './screens/FailureScreen';
 import ImageScreen from './screens/ImageScreen';
-import MemoryCacheScreen from './screens/MemoryCacheScreen';
 import UrlCacheScreen from './screens/UrlCacheScreen';
 import DataCacheScreen from './screens/DataCacheScreen';
-import LocalAssetScreen from './screens/LocalAssetScreen';
 import SVGScreen from './screens/SVGScreen';
 import GifScreen from './screens/GifScreen';
 import PrefetchScreen from './screens/PrefetchScreen';
 import PlaceholderScreen from './screens/PlaceholderScreen';
 import LiveTextScreen from './screens/LiveTextScreen';
 import APNGScreen from './screens/APNGScreen';
+import DetailScreen from './screens/DetailScreen';
 
 const Stack = createNativeStackNavigator<HomeStackParamList>();
 
@@ -27,11 +25,12 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name={RouteName.Home} component={HomeScreen} />
         <Stack.Group>
-          <Stack.Screen
-            name={RouteName.TurboImage}
-            component={TurboImageScreen}
-          />
           <Stack.Screen name={RouteName.Image} component={ImageScreen} />
+          <Stack.Screen name={RouteName.UrlCache} component={UrlCacheScreen} />
+          <Stack.Screen
+            name={RouteName.DataCache}
+            component={DataCacheScreen}
+          />
         </Stack.Group>
         <Stack.Group>
           <Stack.Screen
@@ -40,24 +39,12 @@ function App() {
           />
         </Stack.Group>
         <Stack.Group>
-          <Stack.Screen
-            name={RouteName.MemoryCache}
-            component={MemoryCacheScreen}
-          />
-          <Stack.Screen name={RouteName.UrlCache} component={UrlCacheScreen} />
-          <Stack.Screen
-            name={RouteName.DataCache}
-            component={DataCacheScreen}
-          />
-          <Stack.Screen
-            name={RouteName.LocalAsset}
-            component={LocalAssetScreen}
-          />
           <Stack.Screen name={RouteName.Prefetch} component={PrefetchScreen} />
         </Stack.Group>
         <Stack.Group>
           <Stack.Screen name={RouteName.Success} component={SuccessScreen} />
           <Stack.Screen name={RouteName.Failure} component={FailureScreen} />
+          <Stack.Screen name={RouteName.Detail} component={DetailScreen} />
         </Stack.Group>
         <Stack.Screen
           name={RouteName.ImageProcessing}
