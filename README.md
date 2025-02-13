@@ -1,1 +1,1 @@
-# Test TurboImage againest the latest React Native(0.76)
+# Test TurboImage againest the latest React Native
